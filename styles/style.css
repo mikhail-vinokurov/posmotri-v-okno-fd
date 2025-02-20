@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -48,4 +49,238 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.content {
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  align-items: end;
+  grid-template-columns: 711px 399px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+}
+
+.search-form__label {
+  display: flex;
+}
+
+.search-form__label:focus {
+  outline: none;
+}
+
+.search-form__label:focus-visible {
+  outline: 1px solid #fff; 
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 5px;
+  position: relative;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  top: 1px;
+  left: 1px;
+}
+
+.search-form__textfield {
+  width: 225px;
+  font-size: 18px;
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  appearance: none;
+}
+
+/* .search-form__label {
+  display: flex;
+  width: fit-content;
+} */ 
+
+.content__list-container {
+  position: relative;
+  height: 298px;
+  overflow-y: auto;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+
+.content__list-item {
+  padding: 0 3px;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  color: #fff;
+}
+
+.content__details {
+  width: 100%;
+}
+
+.content__details .title {
+  padding-bottom: 26px;
+  font-family: oswald;
+  font-size: 75px;
+  text-transform: uppercase;
+  line-height: 94%;
+}
+
+.content__accent {
+  color: rgb(84, 80, 80);
+}
+
+.content__video-card-title {
+  font-family: oswald;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 37px;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+  width: 198px;
+}
+
+.content__video-card-description {
+  width: 100%;
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16.2px;
+  margin-top: 5px;
+}
+
+.content__card-link_current:active {
+  background-color: rgb(84, 80, 80);
+}
+
+.result__video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 13px;
+}
+
+.result__video {
+  object-fit: cover;
+  width: 100%;
+  height: 386px;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  }
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.button {
+  font-size: 18px;
+  font-family: Fira Sans Condensed;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.button:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: rgb(84 , 80, 80);
+}
+
+.button:focus {
+  outline: none
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.more-button {
+  width: 100%;
+  padding: 5px;
+  margin-top: 30px;
 }
