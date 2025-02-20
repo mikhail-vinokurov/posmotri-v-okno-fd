@@ -99,7 +99,7 @@ ol {
 }
 
 .search-form__label:focus-visible {
-  outline: 1px solid #fff; 
+  outline: 1px solid #fff;
 }
 
 .search-form__checkbox-list {
@@ -115,7 +115,9 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
@@ -127,14 +129,10 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
-  position: absolute;
   display: block;
   background-color: #fff;
   width: 15px;
   height: 15px;
-  margin-right: 5px;
-  top: 1px;
-  left: 1px;
 }
 
 .search-form__textfield {
