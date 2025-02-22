@@ -14,7 +14,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -48,7 +48,7 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .visually-hidden {
@@ -166,7 +166,7 @@ ol {
 /* .search-form__label {
   display: flex;
   width: fit-content;
-} */ 
+} */
 
 .content__list-container {
   position: relative;
@@ -200,7 +200,7 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-  text-decoration-thickness: 1px; 
+  text-decoration-thickness: 1px;
   text-underline-offset: 5px;
   color: #fff;
 }
@@ -260,14 +260,13 @@ ol {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-  
 
 .result__video-container {
   position: relative;
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
-  }
+}
 
 .result__video {
   object-fit: cover;
@@ -305,11 +304,11 @@ ol {
 }
 
 .button:active {
-  background-color: rgb(84 , 80, 80);
+  background-color: rgb(84, 80, 80);
 }
 
 .button:focus {
-  outline: none
+  outline: none;
 }
 
 .button:focus-visible {
